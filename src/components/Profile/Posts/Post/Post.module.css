@@ -18,3 +18,10 @@
 .post button {
     padding: 5px 20px;
 }
+
+.post button span {
+    margin: 0 0 0 3px;
+    padding: 1px 3px;
+    border: 1px solid black;
+    border-radius: 50px;
+}

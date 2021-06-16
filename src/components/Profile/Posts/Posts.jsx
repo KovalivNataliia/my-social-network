@@ -10,10 +10,9 @@ const Posts = () => {
                 <button>Create post</button>
             </div>
             <div className={classNames.all_posts}>
-                <Post />
-                <Post />
-                <Post />
-                <Post />
+                <Post massage = "This is my first app" likes = "5"/>
+                <Post massage = "Hello, how are you?" likes = "10"/>
+                <Post massage = "I have a great mood!" likes = "50"/>
             </div>
         </div>
     );
