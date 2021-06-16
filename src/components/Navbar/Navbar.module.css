@@ -1,0 +1,17 @@
+.nav {
+    grid-area: nav;
+    background: linear-gradient(90deg, #1b1b1b, #565656);
+}
+
+.nav ul {
+    margin: 0 20px;
+}
+
+.nav li {
+    padding: 5px;
+}
+
+.nav a {
+    color: white;
+    font-size: 20px;
+}
