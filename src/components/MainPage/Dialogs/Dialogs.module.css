@@ -1,10 +1,41 @@
 .content {
     background-color: #6666;
     height: 100%;
+    display: grid;
+    grid-template-areas: "title title" "dialogs messages";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 3fr 10fr;
+    grid-gap: 10px;
 }
 
 .content h2 {
     font-size: 25px;
     font-weight: 500;
     padding: 15px 0 0 15px;
+    grid-area: title;
+}
+
+.dialogs {
+    grid-area: dialogs;
+    border-right: 1px dashed #000;
+}
+
+.dialogs_item {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.dialogs_item a {
+    color: #052975;
+    font-weight: bold;
+}
+
+.messages {
+    grid-area: messages;
+}
+
+.messages_item {
+    padding: 20px;
+    font-size: 15px;
+    border-bottom: 1px solid #000;
 }

@@ -1,11 +1,12 @@
 import classNames from './Profile.module.css'
 import Posts from './Posts/Posts';
+import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 
 const Profile = () => {
     return (
         <div className={classNames.content}>
-            <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/04/05/46/90580cca18c50e5.jpg" alt=""></img>
+            <ProfileInfo />
             <Posts />
         </div>
     );
