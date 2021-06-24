@@ -1,0 +1,9 @@
+.dialogs_item {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.dialogs_item a {
+    color: #052975;
+    font-weight: bold;
+}
