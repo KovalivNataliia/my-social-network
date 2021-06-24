@@ -20,22 +20,6 @@
     border-right: 1px dashed #000;
 }
 
-.dialogs_item {
-    padding: 20px;
-    font-size: 18px;
-}
-
-.dialogs_item a {
-    color: #052975;
-    font-weight: bold;
-}
-
 .messages {
     grid-area: messages;
-}
-
-.messages_item {
-    padding: 20px;
-    font-size: 15px;
-    border-bottom: 1px solid #000;
 }
