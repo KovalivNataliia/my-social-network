@@ -4,9 +4,13 @@ import classNames from './ProfileInfo.module.css'
 const ProfileInfo = () => {
     return (
         <div className={classNames.content}>
-            <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/04/05/46/90580cca18c50e5.jpg" alt=""></img>
-            <div className={classNames.info}>
-                Ava + description
+            <div className={classNames.bg}>
+                <div className={classNames.profilePhoto}>
+                    <img src="https://img.icons8.com/bubbles/2x/jake.png" alt="" />
+                </div>
+                <div className={classNames.info}>
+                    description
+                </div>
             </div>
         </div>
     );
