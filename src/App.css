@@ -34,16 +34,24 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*#endregion*/
 
 
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body {
+	background: #17202A;
+	color: #FFFFFF;
+}
+
 .app-wrapper {
+  font-family: 'Muli', sans-serif;
   width: 950px;
   margin: auto;
   display: grid;
   grid-template-areas: 
   "header header"
   "nav content";
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
+  grid-template-rows: 70px 1fr;
+  grid-template-columns: 2.5fr 10fr;
+  grid-gap: 20px;
 }
 
 .app-wrapper-content {

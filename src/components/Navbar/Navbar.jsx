@@ -6,19 +6,19 @@ const Navbar = () => {
         <nav className={classNames.nav}>
             <ul>
                 <li>
-                    <NavLink to="/profile" activeClassName={classNames.active}>Profile</NavLink>
+                    <NavLink to="/profile" activeClassName={classNames.active}><img src="https://img.icons8.com/bubbles/2x/test-account.png" alt="#" /> Profile</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/dialogs" activeClassName={classNames.active}>Messages</NavLink>
+                    <NavLink to="/dialogs" activeClassName={classNames.active}><img src="https://img.icons8.com/bubbles/2x/important-mail.png" alt="#" /> Messages</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/news" activeClassName={classNames.active}>News</NavLink>
+                    <NavLink to="/news" activeClassName={classNames.active}><img src="https://img.icons8.com/bubbles/2x/america.png" alt="#" /> News</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/music" activeClassName={classNames.active}>Music</NavLink>
+                    <NavLink to="/music" activeClassName={classNames.active}><img src="https://img.icons8.com/bubbles/2x/musical-notes.png" alt="#" /> Music</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/settings" activeClassName={classNames.active}>Settings</NavLink>
+                    <NavLink to="/settings" activeClassName={classNames.active}><img src="https://img.icons8.com/bubbles/2x/gears.png" alt="#" /> Settings</NavLink>
                 </li>
             </ul>
         </nav>
