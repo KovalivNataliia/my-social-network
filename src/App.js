@@ -20,12 +20,12 @@ const App = (props) => {
           <Route path='/news' component={News}/>
           <Route path='/music' component={Music}/>
           <Route path='/settings' component={Settings}/> */}
-
-          <Route path='/profile' render={ () => <Profile postsData={props.state.postsData}/>}/>
-          <Route path='/dialogs' render={ () => <Dialogs dialogsData={props.state.dialogsData} messagesData={props.state.messagesData} />}/>
-          <Route path='/news' render={ () => <News />}/>
-          <Route path='/music' render={ () => <Music />}/>
-          <Route path='/settings' render={ () => <Settings />}/>
+          
+          <Route path='/profile' render={() => <Profile profile={props.state.profile} />} />
+          <Route path='/dialogs' render={() => <Dialogs dialogs={props.state.dialogs} />} />
+          <Route path='/news' render={() => <News />} />
+          <Route path='/music' render={() => <Music />} />
+          <Route path='/settings' render={() => <Settings />} />
         </div>
       </div>
     </BrowserRouter>

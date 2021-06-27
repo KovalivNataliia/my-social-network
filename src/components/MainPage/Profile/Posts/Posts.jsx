@@ -12,7 +12,7 @@ const Posts = (props) => {
         <div className={classNames.posts}>
             <h2>My Posts</h2>
             <div className={classNames.post_input}>
-                <input type="text" />
+                <input type="text" className={classNames.input} />
                 <button className={classNames.btn}>Create post</button>
             </div>
             <div className={classNames.all_posts}>

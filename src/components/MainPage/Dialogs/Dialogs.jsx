@@ -4,19 +4,18 @@ import Messages from './Messages/Messages'
 
 
 const Dialogs = (props) => {
-    
-    let dialogElement = props.dialogsData.map( dialog => {
+
+    let dialogElement = props.dialogs.dialogsData.map(dialog => {
         return <DialogItem name={dialog.name} id={dialog.id} />
     })
-    
-    let messageElement = props.messagesData.map( message => {
+
+    let messageElement = props.dialogs.messagesData.map(message => {
         return <Messages message={message.message} />
     })
 
 
     return (
         <div className={classNames.content}>
-            <h2>Dialogs</h2>
             <div className={classNames.dialogs}>
                 <ul>
                     {dialogElement}
@@ -26,6 +25,10 @@ const Dialogs = (props) => {
                 <ul>
                     {messageElement}
                 </ul>
+                <div className={classNames.send_form}>
+                    <input type="text" className={classNames.input} />
+                    <button className={classNames.btn}>Send</button>
+                </div>
             </div>
         </div>
     );
