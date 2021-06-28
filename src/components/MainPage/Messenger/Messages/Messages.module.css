@@ -1,0 +1,9 @@
+.messages {
+    min-width: 490px;
+}
+
+.messages ul {
+    padding: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}

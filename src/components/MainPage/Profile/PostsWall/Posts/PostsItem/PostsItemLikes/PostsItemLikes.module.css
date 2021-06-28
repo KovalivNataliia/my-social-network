@@ -1,0 +1,16 @@
+.btn {
+    background: none;
+    border: none;
+}
+
+.likes {
+    width: 18px;
+    height: 18px;
+}
+
+.btn span {
+    margin: 0px 0 0 3px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+}

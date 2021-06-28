@@ -1,12 +1,12 @@
 import classNames from './Profile.module.css'
-import Posts from './Posts/Posts'
+import PostsWall from './PostsWall/PostsWall'
 import ProfileInfo from './ProfileInfo/ProfileInfo'
 
 const Profile = (props) => {
     return (
         <div className={classNames.content}>
             <ProfileInfo />
-            <Posts postsData={props.profile.postsData}/>
+            <PostsWall postsData={props.profile.postsData}/>
         </div>
     );
 }
