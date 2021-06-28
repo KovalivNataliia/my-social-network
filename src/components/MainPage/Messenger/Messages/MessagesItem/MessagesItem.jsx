@@ -1,6 +1,6 @@
-import classNames from './Messages.module.css'
+import classNames from './MessagesItem.module.css'
 
-const Messages = (props) => {
+const MessagesItem = (props) => {
     return (
         <li className={classNames.messages_item}>
             {props.message}
@@ -9,4 +9,4 @@ const Messages = (props) => {
 }
 
 
-export default Messages
+export default MessagesItem

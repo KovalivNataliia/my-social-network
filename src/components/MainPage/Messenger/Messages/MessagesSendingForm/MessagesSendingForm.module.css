@@ -1,22 +1,3 @@
-.content {
-    height: 100%;
-    display: flex;
-}
-
-.dialogs {
-    min-width: 250px;
-}
-
-.messages {
-    min-width: 490px;
-}
-
-.messages ul {
-    padding: 15px 0 0 0;
-    display: flex;
-    flex-direction: column;
-}
-
 .send_form {
     display: flex;
     justify-content: space-between;
