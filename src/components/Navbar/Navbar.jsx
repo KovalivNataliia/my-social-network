@@ -4,7 +4,9 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = (props) => {
 
-    let navElement = props.navbar.navElements.map(element => {
+    let navElements = props.store.getState().navbar.navElements;
+
+    let navElement = navElements.map(element => {
         return (
             <li>
                 <NavLink to={element.link} activeClassName={classNames.active}><img src={element.icon} alt="#" /> {element.name}</NavLink>
