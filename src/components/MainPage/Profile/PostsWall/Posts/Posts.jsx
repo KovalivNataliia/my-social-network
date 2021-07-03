@@ -4,7 +4,9 @@ import PostsItem from './PostsItem/PostsItem'
 
 const Posts = (props) => {
 
-    let postElement = props.postsData.map(post => {
+    let postsData = props.store.getState().profile.postsData;
+
+    let postElement = postsData.map(post => {
         return <PostsItem message={post.message} likes={post.likes} photo={post.photo}/>
     })
 

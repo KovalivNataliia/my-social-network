@@ -1,10 +1,12 @@
 import classNames from './Messages.module.css'
 import MessagesItem from './MessagesItem/MessagesItem'
-import MessagesSendingForm from './MessagesSendingForm/MessagesSendingForm'
+import MessagesSendingFormContainer from './MessagesSendingForm/MessagesSendingFormContainer'
 
 const Messages = (props) => {
 
-    let messageElement = props.messagesData.map(message => {
+    let messagesData = props.store.getState().dialogs.messagesData;
+
+    let messageElement = messagesData.map(message => {
         return <MessagesItem message={message.message} />
     })
 
@@ -13,7 +15,7 @@ const Messages = (props) => {
             <ul>
                 {messageElement}
             </ul>
-            <MessagesSendingForm />
+            <MessagesSendingFormContainer store={props.store}/>
         </div>
     );
 }

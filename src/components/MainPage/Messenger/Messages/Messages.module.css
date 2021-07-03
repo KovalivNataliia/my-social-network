@@ -1,5 +1,6 @@
 .messages {
     min-width: 490px;
+    position: relative;
 }
 
 .messages ul {
