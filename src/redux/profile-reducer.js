@@ -14,7 +14,6 @@ let initialState = {
 
 const profileReducer = (state = initialState, action) => {
     switch (action.type) {
-
         case ADD_POST:
             let newPost = {
                 id: 6,
@@ -22,15 +21,17 @@ const profileReducer = (state = initialState, action) => {
                 likes: 0,
                 photo: "https://img.icons8.com/dusk/2x/finn--v1.png"
             };
+            return {
+                ...state,
+                newPostText: '',
+                postsData: [...state.postsData, newPost],
 
-            state.postsData.push(newPost);
-            state.newPostText = '';
-            return state;
-
+            }
         case UPDATE_NEW_POST_TEXT:
-            state.newPostText = action.newText;
-            return state;
-
+            return {
+                ...state,
+                newPostText: action.newText,
+            }
         default:
             return state;
     }

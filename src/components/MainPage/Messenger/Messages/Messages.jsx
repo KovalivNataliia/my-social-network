@@ -4,9 +4,7 @@ import MessagesSendingFormContainer from './MessagesSendingForm/MessagesSendingF
 
 const Messages = (props) => {
 
-    let messagesData = props.store.getState().dialogs.messagesData;
-
-    let messageElement = messagesData.map(message => {
+    let messageElement = props.messagesData.map(message => {
         return <MessagesItem message={message.message} />
     })
 
@@ -15,7 +13,7 @@ const Messages = (props) => {
             <ul>
                 {messageElement}
             </ul>
-            <MessagesSendingFormContainer store={props.store}/>
+            <MessagesSendingFormContainer />
         </div>
     );
 }
