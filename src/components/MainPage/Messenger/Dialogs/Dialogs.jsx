@@ -3,10 +3,8 @@ import DialogsItem from './DialogsItem/DialogsItem'
 
 
 const Dialogs = (props) => {
-
-    let dialogsData = props.store.getState().dialogs.dialogsData;
-
-    let dialogElement = dialogsData.map(dialog => {
+    
+    let dialogElement = props.dialogsData.map(dialog => {
         return <DialogsItem name={dialog.name} id={dialog.id} photo={dialog.photo}/>
     })
 

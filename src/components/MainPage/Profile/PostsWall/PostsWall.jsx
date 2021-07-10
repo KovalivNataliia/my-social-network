@@ -1,14 +1,14 @@
 import classNames from './PostsWall.module.css'
 import PostsCreatingFormContainer from './PostsCreatingForm/PostsCreatingFormContainer'
-import Posts from './Posts/Posts'
+import PostsContainer from './Posts/PostsContainer'
 
 
 const PostsWall = (props) => {
     return (
         <div className={classNames.posts}>
             <h2>My Posts</h2>
-            <PostsCreatingFormContainer store={props.store}/>
-            <Posts store={props.store}/>
+            <PostsCreatingFormContainer />
+            <PostsContainer />
         </div>
     );
 }

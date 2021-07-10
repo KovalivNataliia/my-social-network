@@ -1,13 +1,13 @@
 import classNames from './Messenger.module.css'
-import Dialogs from './Dialogs/Dialogs'
-import Messages from './Messages/Messages'
+import MessagesContainer from './Messages/MessagesContainer'
+import DialogsContainer from './Dialogs/DialogsContainer';
 
 
 const Messenger = (props) => {
     return (
         <div className={classNames.content}>
-            <Dialogs store={props.store} />
-            <Messages store={props.store} />
+            <DialogsContainer />
+            <MessagesContainer />
         </div>
     );
 }
