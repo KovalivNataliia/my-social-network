@@ -6,7 +6,7 @@ const Navbar = (props) => {
 
     let navElement = props.navElements.map(element => {
         return (
-            <li>
+            <li key={element.id}>
                 <NavLink to={element.link} activeClassName={classNames.active}><img src={element.icon} alt="#" /> {element.name}</NavLink>
             </li>
         );
