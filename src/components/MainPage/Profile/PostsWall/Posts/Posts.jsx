@@ -5,7 +5,7 @@ import PostsItem from './PostsItem/PostsItem'
 const Posts = (props) => {
 
     let postElement = props.postsData.map(post => {
-        return <PostsItem message={post.message} likes={post.likes} photo={post.photo}/>
+        return <PostsItem message={post.message} likes={post.likes} photo={post.photo} key={post.id}/>
     })
 
     return (
